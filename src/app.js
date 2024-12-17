@@ -22,7 +22,7 @@ let app = express();
 
 // Mongoose connection
 
-const connectionString = 'mongodb+srv://gms_user:s3cret@bellevueuniversity.lcwc1ht.mongodb.net/?retryWrites=true&w=majority'
+const connectionString = process.env.DB_CONN || 'mongodb+srv://gms_user:s3cret@bellevueuniversity.lcwc1ht.mongodb.net/?retryWrites=true&w=majority'
 
 const dbName = 'gms';
 
